@@ -8,12 +8,18 @@ public class DialogueScript : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     private int index;
+    private bool first = true;
     // Start is called before the first frame update
-    void ExecuteOnImapct()
+    public void ExecuteOnImapct()
     {
+        if (first == false)
+        {
+            return;
+        }
         this.transform.localScale = new Vector3(1,1,1);
         textComponent.text = string.Empty; 
         startDialogue();
+        first = false;
     }
 
     // Update is called once per frame
