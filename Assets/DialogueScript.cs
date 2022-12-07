@@ -10,6 +10,8 @@ public class DialogueScript : MonoBehaviour
     private int index;
     private bool first = true;
     // Start is called before the first frame update
+
+
     public void ExecuteOnImapct()
     {
         if (first == false)
