@@ -40,7 +40,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         
         var temp = Instantiate(bunnyPrefabReference,new Vector3(Random.Range(-areaX,areaX)
-            ,10,Random.Range(-areaY,areaY)),Quaternion.identity);
+            ,0,Random.Range(-areaY,areaY)),Quaternion.identity);
 
         bunnyList.Add(temp);
 

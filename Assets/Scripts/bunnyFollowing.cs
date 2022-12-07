@@ -10,6 +10,14 @@ public class bunnyFollowing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Player == null)
+        {
+            Player = GameObject.Find("vBasicController_Jane").transform;
+        }
+        if (bunny == null)
+        {
+            bunny = gameObject.GetComponent<NavMeshAgent>();
+        }
         
     }
 
@@ -17,5 +25,6 @@ public class bunnyFollowing : MonoBehaviour
     void Update()
     {
         bunny.SetDestination(Player.position);
+        
     }
 }
