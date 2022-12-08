@@ -61,6 +61,7 @@ public class vThirdPersonCamera : MonoBehaviour
     void Start()
     {
         Init();
+        Cursor.visible = false;
     }
 
     public void Init()
